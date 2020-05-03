@@ -62,7 +62,7 @@ def main():
     model.add(Dropout(0.4))
     model.add(Dense(120,activation = 'softmax'))
     model.summary()
-    #model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
     model.load_weights('cnn_from_scratch_fruits_adam.hdf5')
     print("Model Ready...")
     while(True):
