@@ -31,8 +31,8 @@ def get_data(path):
         return target_labels
 def main():
     print("loading data (takes about a minute) ...")
-    train_data = r'/Training'
-    test_data = r'./Test'
+    train_data = r'./fruits-360/Training'
+    test_data = r'./fruits-360/Test'
     labels = get_data(train_data)
     
     
